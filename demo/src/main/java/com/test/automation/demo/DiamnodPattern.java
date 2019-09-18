@@ -8,10 +8,9 @@ public class DiamnodPattern {
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < space; j++)
 				System.out.print(" ");
-			for (int j = 0; j <= i; j++)
+			for (int k = 0; k <= i; k++)
 				System.out.print("* ");
-
-			System.out.print("\n");
+                System.out.println("");
 			space--;
 
 		}
@@ -19,10 +18,9 @@ public class DiamnodPattern {
 		for (int i = n; i >0; i--) {
 			for (int j = 0; j < space; j++)
 				System.out.print(" ");
-			for (int j = 0; j <i; j++)
+			for (int k = 0; k <i; k++)
 				System.out.print("* ");
-
-			System.out.print("\n");
+			    System.out.println("");
 			space++;
 		}
 	}

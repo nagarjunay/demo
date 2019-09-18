@@ -11,7 +11,6 @@ public class thirdlargestnum {
 					temp = a[i];
 					a[i] = a[j];
 					a[j] = temp;
-
 				}
 			}
 		}
