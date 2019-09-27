@@ -10,12 +10,13 @@ public class NumberPattern {
 		System.out.println("How many rows you want to print?");
 		int rows=scan.nextInt();
 		
-		for(int i=1; i<=rows; i++) {
-			System.out.println(" ");
-			for(int j=1; j<=i; j++) {
-				System.out.print(i+" ");
-			}
-		}
+
+      for(int i=1; i<=rows; i++) {
+    	  System.out.println(" ");
+    	  for(int j=1; j<=i; j++) {
+    		  System.out.print(i+" ");
+    	  }
+      }
 		System.out.println("");
 //------------------------------------------------------------------------------		
 		

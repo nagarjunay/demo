@@ -1,7 +1,5 @@
 package com.test.automation.demo;
 
-import net.bytebuddy.implementation.bind.annotation.Super;
-
 public class Constructorwithinconstructor {
 	Constructorwithinconstructor(){
 		this(5,6);
