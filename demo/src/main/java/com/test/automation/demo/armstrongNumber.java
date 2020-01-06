@@ -4,18 +4,18 @@ public class armstrongNumber {
 
 	public static void main(String[] args) {
 
-		int n = 153, temp, a, c = 0;
-
+		int n =152, temp = 0, a, c=0;
+		
+		
 		temp = n;
-		while (n > 0) {
-			a = n % 10;
-			n = n / 10;
-			c = c + (a * a * a);
+		while(n>0) {
+			a = n%10;
+			n = n/10;
+			c = c + (a*a*a);
 		}
-		if (temp == c)
-			System.out.println("Given number is a Armstrong");
+		if(temp==c)
+			System.out.println("Armstrong Number");
 		else
-			System.out.println("Given number is not a Armstrong");
-
+			System.out.println("Not a armstrong number");
 	}
 }
