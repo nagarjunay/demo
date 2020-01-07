@@ -39,5 +39,13 @@ public class Dynamiclist {
 			}
 		}
 	}
+	
+	
+	public void Method2_Verifying_TotalNum_Of_Col_Rows() 
+	{
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'RSA1903270000008')]/parent::td//preceding-sibling::td[2]/input[@type='checkbox']"))
+				.click();
+	}
 
 }
