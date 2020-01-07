@@ -12,12 +12,11 @@ public class stringoccurrence {
 		for (Character c : str.toCharArray()) {
 			if (count.containsKey(c)) {
 				count.put(c, count.get(c) + 1);
-
-			} 
-			else {
+			} else {
 				count.put(c, 1);
 			}
 		}
+
 		System.out.println(count);
 	}
 }
