@@ -4,16 +4,23 @@ public class evenOdd {
 
 	public static void main(String[] args) {
 
-        int n = 224;
-        if(n % 2 == 0) {
-        	System.out.println("Given number is even");
-        }
-        else
-        {
-        	System.out.println("Given number is odd");
-        }
-
-
+		int n = 4;
+		System.out.println("Even Numbers from 1 to "+ n +" are: ");
+		for (int i = 1; i <= n; i++) 
+		{
+		   //if number%2 != 0 it means its an odd number
+		   if (i % 2 != 0) 
+		   {
+			System.out.println("_");
+		   }
+		    else
+		    {
+	    	 	for(int j=1; j<=i-1; j++)
+			    {
+			    	System.out.print(" ");
+			    }
+	    	 	System.out.print("|");
+		    }  
+		}  
 	}
-
 }

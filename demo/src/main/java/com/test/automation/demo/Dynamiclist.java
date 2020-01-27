@@ -32,17 +32,14 @@ public class Dynamiclist {
 
 		for (int i = 1; i <= rowCount; i++) {
 			String name = driver.findElement(By.xpath(Before_xpath + i + After_xpath)).getText();
-			System.out.println(name.toString());
 			if (name.contains("RSR1904010000002")) {
 				// tbody[@id="lstBody"]/tr[1]/td[1]/input
 				driver.findElement(By.xpath("//tbody[@id='lstBody']/tr[" + i + "]/td[1]/input")).click();
 			}
 		}
 	}
-	
-	
-	public void Method2_Verifying_TotalNum_Of_Col_Rows() 
-	{
+
+	public void Method2_Verifying_TotalNum_Of_Col_Rows() {
 		driver.findElement(By.xpath(
 				"//a[contains(text(),'RSA1903270000008')]/parent::td//preceding-sibling::td[2]/input[@type='checkbox']"))
 				.click();
